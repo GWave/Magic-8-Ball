@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Magic 8 Ball</title>
+<!-- STYLESHHETS -->
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" type="text/css" />
+<!-- JAVASCRIPTS -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-ui-1.11.0.custom/jquery-ui.min.js"></script>
+<script src="js/jquery.mobile-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+<div data-role="page" id="page1"><!-- Page 1 -->
+
+<div data-role="header" data-position="fixed" data-theme="b">
+  <h1>Magic 8 Ball</h1>
+</div>
+
+<div id="ballContent">
+    <div id="answerBox"><span id="answerText">Shake</span></div>
+</div>
+
+<a href="#" data-role="button" data-inline="true" id="shakeButton">Shake</a>
+
+<!--<div role="main" class="ui-content" data-theme="b">
+    <a href="#defaultpanel" data-role="button" data-inline="true" data-icon="gear" id="optionsButton">Options</a>
+</div>-->
+ 
+<!-- defaultpanel  -->
+<div data-role="panel" id="defaultpanel" data-theme="b">
+ <div class="panel-content">
+ <fieldset data-role="controlgroup" data-theme="b">
+  <legend>Choose a mode:</legend>
+  <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked">
+  <label for="radio-choice-1">Shake</label>
+ 
+  <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2">
+  <label for="radio-choice-2">Speak</label>
+ 
+  <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3">
+  <label for="radio-choice-3">Button</label>
+ 
+  <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4">
+  <label for="radio-choice-4">Text Box</label>
+</fieldset>
+  <a href="#demo-links" data-rel="close" data-role="button" data-theme="b" data-icon="delete" data-inline="true">Close</a>
+ </div><!-- /content wrapper for padding -->
+ 
+ 
+</div><!-- /defaultpanel -->
+</div><!-- End Page 1 -->
+</body>
+</html>
